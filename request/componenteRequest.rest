@@ -1,0 +1,32 @@
+GET http://localhost:3000/api/users
+GET http://localhost:3000/api/posts
+GET http://localhost:3000/api/categories
+
+###
+
+GET http://localhost:3000/api/users?listado=true
+
+
+### 
+
+GET http://localhost:3000/api/users/2?relations=true
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+{
+    "user_id":3,
+    "user_name":"Pepe",
+    "address":"calle Botijo 1",
+    "phone_number":879453162,
+    "gmail":"ElBotijo@gmail.com"
+}
+
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+{
+            "post_id": 1,
+            "user_gmail": "correo@gmail.com",
+            "post_text": "contenido de la publicacion",
+            "post_category": "prueba"
+        }
