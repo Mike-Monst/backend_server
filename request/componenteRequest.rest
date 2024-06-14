@@ -1,18 +1,18 @@
-GET http://localhost:3000/api/users
-GET http://localhost:3000/api/posts
-GET http://localhost:3000/api/categories
+GET http://3.209.155.46:3000/api/users
+GET http://3.209.155.46:3000/api/posts
+GET http://3.209.155.46:3000/api/categories
 
 ###
 
-GET http://localhost:3000/api/users?listado=true
+GET http://3.209.155.46:3000/api/users?listado=true
 
 
 ### 
 
-GET http://localhost:3000/api/users/2?relations=true
+GET http://3.209.155.46:3000/api/users/2?relations=true
 
 ###
-POST http://localhost:3000/api/users
+POST http://3.209.155.46:3000/api/users
 Content-Type: application/json
 {
     "user_id":3,
@@ -22,7 +22,7 @@ Content-Type: application/json
     "gmail":"ElBotijo@gmail.com"
 }
 
-POST http://localhost:3000/api/posts
+POST http://3.209.155.46:3000/api/posts
 Content-Type: application/json
 {
             "post_id": 1,

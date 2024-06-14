@@ -17,7 +17,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: 'http://localhost:5173' // replace with the origin of your user-side application
+    origin: 'http://3.209.155.46:5173' // replace with the origin of your user-side application
   }));
 // Configurar middleware para analizar JSON en las solicitudes
 app.use(express.json());
